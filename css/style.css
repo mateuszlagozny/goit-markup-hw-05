@@ -1,0 +1,464 @@
+/* Style ogólne dla całego dokumentu */
+
+.agency::after {
+    display: block;
+    content: "";
+    width: auto;
+    height: 3px;
+    background-color: #2196F3;
+}
+
+.portfolio::after {
+   display: block;
+    content: "";
+    width: auto;
+    height: 3px;
+    background-color: #2196F3; 
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #ffff;
+    line-height: 1.5;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+
+/* Stylowanie icons */
+
+.contact-email:hover,
+.contact-phone:hover {
+    fill: #2196F3;
+
+}
+
+.icons-about-us {
+    width: 65px;
+    height: 70px;
+    background-color: #F5F4FA;
+    margin-top: 30px;
+    
+}
+
+.icons-main {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-top: 94px;
+    text-align: center;
+}
+
+.icons-social-media {
+    width: 20px;
+    height: 20px;
+    transition: color 250ms linear;
+ 
+}
+
+.link-social-media {
+    display: inline-flex;
+    fill: #AFB1B8;
+    margin-bottom: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
+
+.link-social-media:hover,
+.link-social-media-footer:hover {
+    background-color: #2196F3;
+   
+    
+
+}
+
+.icons-social-media:hover {
+    fill: #ffff;
+}
+
+.link-social-media-footer {
+    fill: #ffff;
+    display: inline-flex;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-color:grey;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+.icons-our-customer {
+    width: 106px;
+    height: 60px;
+    margin-right: 30px;
+    border: 1px solid;
+    margin-bottom: 100px;
+    fill: #afb1b8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.icons-our-customer:hover {
+    color: #2196F3;
+    fill: #2196F3;
+}
+
+
+.link-customers {
+    display: inline;
+    
+}
+
+
+.container-customers {
+    justify-content: space-around;
+}
+
+    
+
+
+
+/* Stylowanie sekcji header */
+header {
+    
+    background-color: #ffff;
+}
+
+.header {
+    display: flex;
+    font-weight: 500;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+
+}
+
+.menu-header {
+    margin-right: 25px;
+
+}
+span {
+    color: #2196F3;
+}
+
+.logotyp {
+    font-family: "Raleway";
+    font-size: 26px;
+}
+#contact {
+    margin-left: auto;
+}
+
+
+.contact-phone,
+.contact-email {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Stylowanie sekcji motto */
+
+#motto {
+    background-image: url(../images/img-tlo.png);
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    color: #ffff;
+}
+
+.order-service {
+
+    margin-bottom: 250px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.order-service-button {
+    background-color: #2196F3;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #2196F3;
+    width: 200px;
+    height: 50px;
+
+}
+
+
+/* Stylowanie sekcji main */
+.main-content {
+    margin: 0 auto;
+}
+h2 {
+    margin-left: 15px;
+}
+p {
+    color: #757575;
+    padding: 15px;
+}
+
+/* Stylowanie sekcji our-project */
+
+
+.our-project,
+.images-our-project,
+#our-team {
+    text-align: center;
+}
+.image1,
+.image2,
+.image3 {
+
+    display: inline-flex;
+}
+.images-project,
+.images-project2,
+.images-project3 {
+    position: relative;
+    
+}
+
+.caption-image,
+.caption-image2,
+.caption-image3 {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    margin-top: 224px;
+    
+}
+
+/* Stylowanie sekcji our-team */
+
+#our-team {
+    background-color: #F5F4FA;
+}
+
+figure {
+    display: inline-block;
+    margin: 15px;
+    background-color: #ffff;
+    border-radius: 4px;
+}
+.our-team {
+   box-shadow: 5px 5px 15px; 
+}
+
+figcaption {
+    padding: 15px;
+
+}
+
+
+.name-team {
+    font-weight: 500;
+    color: black;
+}
+
+/* Stylowanie linków a */
+
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover,
+a:focus {
+    color: #2196F3;
+
+}
+
+
+/* Stylowanie sekcji customers */
+
+#customers {
+    background-color: #ffff;
+}
+.customers-container {
+    background-color: ffff;
+}
+
+/* Stylowanie sekcji footer */
+
+footer {
+    background-color: #2F303A;
+}
+
+.address {
+    color: #ffff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.link-address,
+.city-address {
+    color: #ffff;
+    opacity: 60%;
+    font-size: 14px;
+}
+
+.join-us {
+    color: #ffff;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Stylowanie podstrony portfolio */
+
+#portfolio {
+    background-color: #ffff;
+}
+
+.main-portfolio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #F5F4FA;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+    background-color: #2196F3;
+    color: #ffff;
+}
+
+.images-portfolio {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-images {
+    position: relative;
+    /* overflow: hidden; */
+
+}
+
+.description {
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+    
+ 
+}
+
+
+/* @keyframes animacja {
+    0% {
+        transform: translate3d(0, 370px, 0 );
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+} */
+
+.description > p {
+    color: #fff;
+    
+}
+
+.images-portfolio:hover .description {
+    /* opacity: 1; */
+    transform: translateY(0);
+}
+
+.images-portfolio:hover {
+    box-shadow: 5px 5px 15px;
+}
+
+/* backdrop */
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 1500ms;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    transition-property: transform;
+}
+
+.close-btn {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-duration: 1500ms;
+}
