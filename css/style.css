@@ -1,25 +1,11 @@
 /* Style ogólne dla całego dokumentu */
 
-.agency::after {
-    display: block;
-    content: "";
-    width: auto;
-    height: 3px;
-    background-color: #2196F3;
-}
-
-.portfolio::after {
-   display: block;
-    content: "";
-    width: auto;
-    height: 3px;
-    background-color: #2196F3; 
-}
 
 body {
     font-family: "Roboto";
     background-color: #ffff;
     line-height: 1.5;
+    margin: 0;
 }
 
 .container {
@@ -136,17 +122,47 @@ body {
 
 
 /* Stylowanie sekcji header */
+.agency::after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3; 
+    margin-top: 44px;
+    margin-left: -55px;
+}
+
+
+.portfolio::after {
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196F3; 
+    margin-top: 44px;
+    margin-left: -65px;
+}
 header {
     
     background-color: #ffff;
+    border-bottom: 1px solid;
+    border-color: #ECECEC;
+
 }
 
 .header {
     display: flex;
     font-weight: 500;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
 
+}
+
+.link-agency,
+.link-portfolio {
+    color: #2196F3;
+    position: relative;
 }
 
 .menu-header {
@@ -180,9 +196,11 @@ span {
 
 #motto {
     background-image: url(../images/img-tlo.png);
-    max-width: 1600px;
+    width: auto;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 h1 {
@@ -199,7 +217,7 @@ h1 {
     margin-bottom: 250px;
     font-size: 16px;
     align-items: center;
-    justify-content: center;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
 }
@@ -231,16 +249,36 @@ p {
 /* Stylowanie sekcji our-project */
 
 
+section.container {
+    flex-direction: column;
+}
+
 .our-project,
 .images-our-project,
 #our-team {
     text-align: center;
 }
+
+.our-project {
+    padding-top: 94px;
+}
+
+.images-our-project{
+    padding-bottom: 94px;
+}
+
 .image1,
 .image2,
 .image3 {
 
     display: inline-flex;
+}
+.image1 {
+    margin-right: 30px;
+
+}
+.image3 {
+    margin-left: 30px;
 }
 .images-project,
 .images-project2,
@@ -266,18 +304,26 @@ p {
 
 /* Stylowanie sekcji our-team */
 
-#our-team {
+.container-our-team {
     background-color: #F5F4FA;
+    width: auto;
+    height: 708px;
+    padding-top: 94px;
 }
+
 
 figure {
     display: inline-block;
-    margin: 15px;
+    margin: 7px;
     background-color: #ffff;
     border-radius: 4px;
+    justify-content: space-between;
 }
 .our-team {
-   box-shadow: 5px 5px 15px; 
+
+   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+   
+   
 }
 
 figcaption {
@@ -309,12 +355,16 @@ a:focus {
 
 /* Stylowanie sekcji customers */
 
-#customers {
-    background-color: #ffff;
+.customers {
+    padding-top: 94px;
 }
+
 .customers-container {
-    background-color: ffff;
+    background-color: #ffff;
+    text-align: center;
+    justify-content: space-around;
 }
+
 
 /* Stylowanie sekcji footer */
 
@@ -372,6 +422,9 @@ footer {
     position: relative;
     overflow: hidden;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid;
+    border-color: #EEEEEE;
+
 }
 
 .portfolio-images {
@@ -395,17 +448,19 @@ footer {
  
 }
 
+.add-card {
+    position: relative;
+    overflow: hidden;
+    width: 370px;
+    height: 294px;
 
-/* @keyframes animacja {
-    0% {
-        transform: translate3d(0, 370px, 0 );
-    }
+}
 
-    100% {
-        transform: translate3d(0, 0, 0);
-    }
+.div {
+    display: inline;
+}
 
-} */
+
 
 .description > p {
     color: #fff;
@@ -413,12 +468,12 @@ footer {
 }
 
 .images-portfolio:hover .description {
-    /* opacity: 1; */
+ 
     transform: translateY(0);
 }
 
 .images-portfolio:hover {
-    box-shadow: 5px 5px 15px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* backdrop */
