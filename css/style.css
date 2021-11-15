@@ -203,6 +203,10 @@ span {
     margin: 0 auto;
 }
 
+.motto-container {
+    flex-direction: column;
+}
+
 h1 {
     font-size: 44px;
     font-weight: 900;
